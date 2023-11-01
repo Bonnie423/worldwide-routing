@@ -7,6 +7,7 @@ const Continent = () => {
 
   const continentCountries =
     continentsData[name as keyof typeof continentsData].countries
+    const sortedCountries = continentCountries.sort((a, b)=> a.name.localeCompare(b.name))
 
   const continentImage =
     continentsData[name as keyof typeof continentsData].image
@@ -16,7 +17,7 @@ const Continent = () => {
       <h2>{name} Counties:</h2>
       <img src={`../../public/images/${continentImage}`} alt="" />
       <ul>
-        {continentCountries.map((country, index) => {
+        {sortedCountries.map((country, index) => {
           return (
             <li key={index}>
               <Link to={`${country.code}`}>{country.name}</Link>
