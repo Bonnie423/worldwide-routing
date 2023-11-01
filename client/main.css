@@ -23,10 +23,17 @@ a {
   text-decoration-line: none;
 }
 
-a.active {
+nav a.active {
   font-weight: bold;
+  text-decoration: dotted;
+  
 }
 
 img {
   max-height: 200px;
+}
+
+.active{
+  font-weight: bold;
+  list-style-type: square;
 }

@@ -7,6 +7,7 @@ const Continent = () => {
 
   const continentCountries =
     continentsData[name as keyof typeof continentsData].countries
+
   const continentImage =
     continentsData[name as keyof typeof continentsData].image
 
@@ -18,9 +19,7 @@ const Continent = () => {
         {continentCountries.map((country, index) => {
           return (
             <li key={index}>
-              <Link to={`${country.code}`}>
-                {country.name}
-              </Link>
+              <Link to={`${country.code}`}>{country.name}</Link>
             </li>
           )
         })}
