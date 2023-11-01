@@ -26,8 +26,8 @@ This exercise asks you to build an experience to navigate continents and their c
 
 In this section we are going to be setting up the root route to display the `<App />`
 
-- [ ] In the `client/` folder, add a new file called `router.tsx`
-- [ ] Import `createBrowserRouter, createRoutesFromElements, Route` from `react-router-dom`
+- [X] In the `client/` folder, add a new file called `router.tsx`
+- [ X] Import `createBrowserRouter, createRoutesFromElements, Route` from `react-router-dom`
 - [ ] Now it's time to display the `<App />` component on the client-side root route `'/'` by using `createBrowserRouter, createRoutesFromElements, Route` (refer to the [docs](https://reactrouter.com/en/main/start/tutorial#jsx-routes) to learn more about Nested Routes)
 
   <details>
@@ -63,7 +63,7 @@ Check out the `App.tsx` component. It currently contains the main header, a `<Ho
 </details>
 <br />
 
-- [ ] Complete the `<Nav>` component so that it contains a list of continent names (like in the image) based on the information from `data/continents.ts`. Add a list item for Home, too
+- [X ] Complete the `<Nav>` component so that it contains a list of continent names (like in the image) based on the information from `data/continents.ts`. Add a list item for Home, too
   <details style="padding-left: 2em">
     <summary>Tip</summary>
 
